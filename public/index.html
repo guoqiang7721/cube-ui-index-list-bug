@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"
+    />
+    <!-- <link rel="icon" href="<%= BASE_URL %>favicon.ico"> -->
+    <!-- <link rel="stylesheet" href="<%= BASE_URL %>js/wx-audio/wx-audio.css" /> -->
+    <title></title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script src="<%= BASE_URL %>js/webim/sdk/webim.min.js" async></script>
+    <script src="<%= BASE_URL %>js/webim/common/show_one_msg.js" async></script>
+    <script src="<%= BASE_URL %>js/webim/switch_chat_obj.js" async></script>
+    <script src="<%= BASE_URL %>js/webim/msg/get_history_msg.js" async></script>
+    <script src="<%= BASE_URL %>js/webim/msg/receive_new_msg.js" async></script>
+    <script src="https://zfile.bxwh002.cn/js/eruda1.5.5.js"></script>
+    <!-- <script src="<%= BASE_URL %>js/wx-audio/wx-audio.js"></script> -->
+    <script>
+      const isUserControl = localStorage.getItem('isUserControl')
+      if (isUserControl) eruda.init()
+    </script>
+  </body>
+</html>
